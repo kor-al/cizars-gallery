@@ -1,0 +1,24 @@
+:root {
+	--white: hsl(0, 0%, 100%);
+	--black: hsl(0, 0%, 0%);
+	--lightBlack: hsla(0, 0%, 0%, 0.137);
+	--emphasis:#ffa575;
+	--base-font: #fff;// #1f6884;
+	--background-color: #497281;//#f3e3cc;
+}
+
+
+body{
+	background-color: var(--background-color);
+	color:  var(--base-font);;
+	//background-image: url(https://www.skillshare.com/blog/wp-content/uploads/2021/07/Wrinkle-Paper-Textures-2-Deeezy-4.jpeg);
+}
+
+.about{
+	color: var(--emphasis);
+}
+
+
+svg#info-icon{
+	fill: var(--emphasis);
+}

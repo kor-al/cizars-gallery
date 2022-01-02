@@ -1,0 +1,169 @@
+@use '../util' as *;
+
+.container {
+  width: 100%;
+  padding: 1rem;
+}
+
+.item {
+  position: relative;
+  width: 20rem;
+  margin: 1rem;
+  @include breakpoint-down(medium) {
+    max-width: 15rem;
+    margin: 0.5rem;
+  }
+}
+
+img {
+  max-width: 100%;
+  cursor: pointer;
+}
+
+// .img {
+//   min-width: 10rem;
+//   max-height: 25rem;
+
+//   @include breakpoint-down(small) {
+//     min-width: 6rem;
+
+//   }
+// }
+
+.header {
+  padding-top: 1rem;
+  padding-bottom: 1.5rem;
+  margin: 0 auto;
+  width: 100%;
+  flex-wrap: wrap;
+
+  .title {
+    width: 80%;
+    @include breakpoint-down(small) {
+      width: 100%;
+    }
+  }
+
+  .description {
+    margin-top: 1.5rem;
+  }
+
+  .about {
+    display: fixed;
+    width: 20%;
+    text-align: right;
+    cursor: pointer;
+    @include breakpoint-down(small) {
+      margin-top: 1.5rem;
+      width: 100%;
+    }
+  }
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.flex-row {
+  flex-direction: row;
+}
+
+.flex-col {
+  flex-direction: column;
+}
+
+.flex-space-around {
+  justify-content: space-around;
+}
+
+.flex-space-between {
+  justify-content: space-evenly;
+}
+
+.flex-start {
+  justify-content: flex-start;
+}
+
+.modal {
+  position: fixed;
+  top: 0%;
+  right: 0%;
+  height: 100vh;
+  width: 100vw;
+  opacity: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: -1;
+
+  &.visible {
+    opacity: 1;
+    z-index: 1;
+  }
+
+  //   .container--modal{
+  // 	position: relative;
+  // 	width: 100%;
+  // 	height: 100%;
+  // 	align-items: center;
+
+  // 	&::after{
+  // 		content: "";
+  // 		position: absolute;
+  // 		display: block;
+  // 		top: 0%;
+  // 		right: 0%;
+  // 		width: 3rem;
+  // 		height: 1rem;
+  // 		background-color: black;
+  // 	}
+
+  .wrapper {
+    //.img-selected {
+    max-width: 80%;
+
+    &::after {
+      content: "";
+      position: absolute;
+      right: 7%;
+      top: 7%;
+      width: 2rem;
+      height: 0.2rem;
+      background-color: var(--base-font);
+      transform-origin: 50% 50%;
+      transform: rotate(45deg);
+      border-radius: 20%;
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      right: 7%;
+      top: 7%;
+      width: 2rem;
+      height: 0.2rem;
+      background-color: var(--base-font);
+      transform-origin: 50% 50%;
+      transform: rotate(-45deg);
+      border-radius: 20%;
+    }
+  }
+
+  .img-selected {
+    position: relative;
+    width: 100%;
+    max-height: 80vh;
+  }
+
+  .img-description {
+    position: absolute;
+    width: 50%;
+    text-align: left;
+  }
+  .about-description {
+    position: absolute;
+    width: 50%;
+    left: 10%;
+    text-align: left;
+  }
+}
