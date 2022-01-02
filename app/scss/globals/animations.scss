@@ -12,6 +12,13 @@
   animation-timing-function: ease-in-out;
 }
 
+.moving-horiz-diag2 {
+  animation-duration: 25s;
+  animation-name: move-horiz-diag2;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+
 
 .rotating {
     animation-duration: 20s;
@@ -50,6 +57,24 @@
 
   100% {
     transform: translate(50px, -50px);
+  }
+}
+
+@keyframes move-horiz-diag2 {
+  0% {
+    transform: translate(-50px, 50px);
+  }
+
+  30% {
+    transform: translate(10px, 50px);
+  }
+
+  60% {
+    transform: translate(50px, -50px);
+  }
+
+  100% {
+    transform: translate(50px, -80px);
   }
 }
 

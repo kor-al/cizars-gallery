@@ -22,3 +22,8 @@ body{
 svg#info-icon{
 	fill: var(--emphasis);
 }
+
+a, a:hover, a:visited{
+	text-decoration: none;
+	color: var(--emphasis);
+}
