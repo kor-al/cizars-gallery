@@ -7,6 +7,8 @@ const cssnano = require('cssnano');
 const babel = require('gulp-babel');
 const terser = require('gulp-terser');
 const browsersync = require('browser-sync').create();
+const ghPages = require('gulp-gh-pages');
+const GulpClient = require('gulp');
 // const browserify = require('browserify')
 //const transform = require('vinyl-transform');
 //const uglify = require('gulp-uglify');
@@ -66,6 +68,14 @@ function watchTask() {
 		series(scssTask,  jsTask, browserSyncReload)
 	);
 }
+
+// Deploy task
+GulpClient.task('deploy', function(){
+	return GulpClient.src('./**/*')
+	.pipe(ghPages());
+})
+
+
 
 // Default Gulp Task
 exports.default = series(scssTask, jsTask, browserSyncServe, watchTask);
