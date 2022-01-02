@@ -31,10 +31,10 @@ const intervalRandom = (min, max) => {
 
 for (const img of images) {
   img.style.transform = `translate(${intervalRandom(
-    -60,
-    60
-  )}px, ${intervalRandom(-60, 60)}px)`;
-  img.parentElement.style.width = `${intervalRandom(20, 30)}rem`;
+    -30,
+    30
+  )}px, ${intervalRandom(-30, 30)}px)`;
+  img.parentElement.style.width = `${intervalRandom(10, 15)}rem`;
 
   img.addEventListener("click", handleClick);
 }

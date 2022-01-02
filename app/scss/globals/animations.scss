@@ -13,7 +13,7 @@
 }
 
 .moving-horiz-diag2 {
-  animation-duration: 25s;
+  animation-duration: 30s;
   animation-name: move-horiz-diag2;
   animation-iteration-count: infinite;
   animation-timing-function: ease-in-out;
@@ -24,6 +24,14 @@
     animation-duration: 20s;
     transform-origin: 50% 50%;;
     animation-name: rotate;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+  }
+
+  .moving-y {
+    animation-duration: 25s;
+    transform-origin: 50% 50%;;
+    animation-name: move-y;
     animation-iteration-count: infinite;
     animation-timing-function: ease-in-out;
   }
@@ -39,6 +47,20 @@
 
   100% {
     transform: translate(-30px, -30px);
+  }
+}
+
+@keyframes move-y {
+  0% {
+    transform: translate(0px, 60px);
+  }
+
+  50% {
+    transform: translate(0px, -80px);
+  }
+
+  100% {
+    transform: translate(0px, 60px);
   }
 }
 
@@ -62,7 +84,7 @@
 
 @keyframes move-horiz-diag2 {
   0% {
-    transform: translate(-50px, 50px);
+    transform: translate(50px, -80px);
   }
 
   30% {
@@ -90,5 +112,20 @@
   
     100% {
       transform: rotate(-10deg);
+    }
+  }
+
+
+  @keyframes rotate-y {
+    0% {
+      transform: rotate(0, -20deg);
+    }
+  
+    30% {
+      transform: rotate(0,20deg);
+    }
+  
+    100% {
+      transform: rotate(0,-20deg);
     }
   }
