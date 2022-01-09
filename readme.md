@@ -1,4 +1,4 @@
-# Scissors gallery
+# Cizars gallery
 The gallery of my Cizars Project
 
 ``` 
