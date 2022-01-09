@@ -45,6 +45,7 @@ modal.addEventListener("click", (e) => {
   if (clicked != imgSelected && modal.classList.contains("visible")) {
     imgSelected.src = "";
     modal.classList.remove("visible");
+    clicked.pa
   }
   aboutDescr.innerHTML = ``;
   imgDescr.innerHTML = ``;
@@ -62,6 +63,6 @@ about.addEventListener("click", (e) => {
   The weight and material of scissors, strong distinctive sounds of cutting, the satisfaction of clear cuts — those are main senses that inspired me.
   </p>
   <p>
-  My resume can be found <a hre="https://kor-al.github.io/resume/" target="_blank">here</a>
+  My resume can be found <a class="link" href="https://kor-al.github.io/resume/" target="_blank">here</a>
   </p>`;
 });
