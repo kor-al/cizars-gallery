@@ -28,6 +28,14 @@
     animation-timing-function: ease-in-out;
   }
 
+  .rotating-2 {
+    animation-duration: 30s;
+    transform-origin: 50% 50%;;
+    animation-name: rotate-2;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+  }
+
   .moving-y {
     animation-duration: 25s;
     transform-origin: 50% 50%;;
@@ -112,6 +120,20 @@
   
     100% {
       transform: rotate(-10deg);
+    }
+  }
+
+  @keyframes rotate-2 {
+    0% {
+      transform: rotate(-30deg);
+    }
+  
+    30% {
+      transform: rotate(40deg);
+    }
+  
+    100% {
+      transform: rotate(-30deg);
     }
   }
 
