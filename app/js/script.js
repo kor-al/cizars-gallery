@@ -35,6 +35,7 @@ for (const img of images) {
     30
   )}px, ${intervalRandom(-30, 30)}px)`;
   img.parentElement.style.width = `${intervalRandom(10, 15)}rem`;
+  img.parentElement.style.maxHeight = `${intervalRandom(10, 15)}rem`;
 
   img.addEventListener("click", handleClick);
 }
