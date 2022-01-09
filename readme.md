@@ -1,5 +1,5 @@
 # Scissors gallery
-The gallery of my scissors project
+The gallery of my Cizars Project
 
 ``` 
 gulp
