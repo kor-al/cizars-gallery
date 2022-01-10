@@ -60,7 +60,7 @@ about.addEventListener("click", (e) => {
   Hi! I'm an artist and data scientist from Moscow.</p>
   <p>
   I created this project being mesmerized by different types of scissors. 
-  The weight and material of scissors, strong distinctive sounds of cutting, the satisfaction of clear cuts — those are main senses that inspired me.
+  The weight and material of scissors, strong distinctive sounds of cutting, the satisfaction of clean cuts — those are main senses that inspired me.
   </p>
   <p>
   My resume can be found <a class="link" href="https://kor-al.github.io/resume/" target="_blank">here</a>
